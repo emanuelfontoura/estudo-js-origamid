@@ -1,9 +1,18 @@
 // OBJETO //
 const livro = {
+    // PROPRIEDADES //
     nome: "O senhor dos anéis",
     ano: 1954,
     autor: "J. R. R. Tolkien",
+
+    // METÓDOS //
+    mostrar: function(){
+        console.log("Ativou o metódo!")
+    },
 } 
+
+// ATIVANDO O METÓDO //
+livro.mostrar()
 
 // ACESSANDO UMA PROPRIEDADE DO OBJETO //
 console.log(2023 - livro.ano)
