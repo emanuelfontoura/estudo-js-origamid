@@ -9,9 +9,38 @@
         body{
             height: 2000px;
         }
+
+        [data-anime]{
+            transition: 0.5s;
+        }
+
+        [data-anime="left"]{
+            position: relative;
+            opacity: 0;
+        }
+
+        .animate{
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            opacity: 1;
+        }
+
+        .altura{
+            height: 1000px;
+        }
+
+        .centro{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
+    <div class="altura"></div>
+    <div data-anime="left" class="centro">OI</div>
     <script src="eventos.js"></script>
 </body>
 </html>
