@@ -5,7 +5,6 @@ links.forEach(ativarLink)
 function ativarLink(item){
     if (item.href == document.location.href){
         item.style.backgroundColor = 'black'
-    }else{
-        item.style.backgroundColor = 'white'
+        item.style.color = 'white'
     }
 }
