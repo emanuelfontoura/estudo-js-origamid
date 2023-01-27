@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        img{
+            display: block;
+            max-width: 100%;
+        }
+
+        .img-container{
+            margin: 0 auto;
+            max-width: 600px;
+            padding: 10px;
+        }
+
+        .img-container > ul{
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="img-container">
+
+        <ul>
+            <li>
+                <img src="../../archives/img1.jpg" alt="Bike 1">
+            </li>
+
+            <li>
+                <img src="../../archives/img2.jpg" alt="Bike 2">
+            </li>
+
+            <li>
+                <img src="../../archives/img3.jpg" alt="Bike 3">
+            </li>
+        </ul>
+
+        <img src="../../archives/img1.jpg" alt="Bike 1">
+
+    </div>
+
+    <script src="solucionar_problemas.js"></script>
+</body>
+</html>
