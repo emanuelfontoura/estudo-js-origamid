@@ -6,9 +6,14 @@ const livro = {
     autor: "J. R. R. Tolkien",
 
     // METÓDOS //
-    mostrar: function(){
+    mostrar(){
         console.log("Ativou o metódo!")
+        console.log(`${this.nome}, ${this.ano}, ${this.autor}`) // THIS SE REFERE AO PRÓPRIO OBJETO
     },
+
+    tempo(anoAtual){
+        return anoAtual - this.ano
+    }
 } 
 
 // ATIVANDO O METÓDO //
@@ -22,3 +27,5 @@ console.log(2023 - livro.ano)
 const teste = livro.autor.toUpperCase() // ACESSANDO UMA PROPRIEDADE DO OBJETO LIVRO (autor) E APLICANDO UM METÓDO STRING DESSA PROPRIEDADE (toUpperCase()) //
 
 console.log(teste)
+
+console.log(livro.tempo(2023))
