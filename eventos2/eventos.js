@@ -1,9 +1,9 @@
 const button = window.document.querySelector('button.clickButton')
 
-function ativarAoClick(){
+button.addEventListener("click", function (event){
     const texto = window.document.querySelector('div.texto')
+
+    console.log(event.x)
     
     texto.classList.toggle('ativar')
-}
-
-button.addEventListener("click", ativarAoClick)
+})
