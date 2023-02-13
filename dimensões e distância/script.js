@@ -17,3 +17,11 @@ for (const index in rect){
         elemento.appendChild(paragrafo)
     }
 }
+
+const small = window.matchMedia('(max-width: 600px)').matches
+
+if (small){
+    console.log('Tela menor que 600px')
+}else{
+    console.log('Tela maior que 600px')
+}
