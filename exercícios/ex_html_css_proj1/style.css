@@ -30,6 +30,7 @@ body{
     font-weight: bold;
     font-size: 0.875rem;
     letter-spacing: 1.4px;
+    padding: 16px 11px;
 }
 
 .titulo{
@@ -173,7 +174,11 @@ footer{
     display: block;
 }
 
-@media (max-width: 700px){
+.menu-mobile{
+    background-color: blue;
+}
+
+@media (max-width: 720px){
     body{
         grid-template-columns: 1fr;
     }
