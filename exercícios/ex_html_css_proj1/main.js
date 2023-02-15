@@ -1,10 +1,15 @@
 const animaisImagens = Array.from(window.document.querySelectorAll('div.animais-imagens-container > img'))
-
 const animaisConteudo = Array.from(window.document.querySelectorAll('div.animais-texto-container > div'))
-
+  
 for (let i = 0; i < animaisImagens.length; i++){
-    animaisImagens[i].addEventListener('click', () => {
-        animaisConteudo[i].classList.toggle('ativar')
+    animaisImagens[i].addEventListener('click', () => { // se eu clicar na imagem 3, o "i" assume o valor 3, isso ocorre pois como já foi percorrida a array, o manipulador de eventos associa o número da imagem a variavel "i" quando clicada.
+        for (let j = 0; j < animaisConteudo.length; j++){
+            if (i == j){
+                animaisConteudo[j].classList.add('ativar')
+            }else{
+                animaisConteudo[j].classList.remove('ativar')
+            }
+        }
     })
 }
 
