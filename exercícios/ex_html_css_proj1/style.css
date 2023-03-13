@@ -125,6 +125,16 @@ body{
     cursor: pointer;
 }
 
+.faq-lista > dt::after{
+    content: "⮧";
+    margin-left: 10px;
+}
+
+.faq-lista > dt.ativo::after{
+    content: "⮥";
+    margin-left: 10px;
+}
+
 .faq-lista > dt::before{
     content: "";
     display: inline-block;
@@ -191,6 +201,23 @@ footer{
     to {
         opacity: 1;
         transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+.ativoAccordion{
+    display: block !important;
+    animation: slideDown 0.3s forwards;
+}
+
+@keyframes slideDown{
+    from{
+        opacity: 0;
+        max-height: 0;
+    }
+    
+    to{
+        opacity: 1;
+        max-height: 200px;
     }
 }
 
