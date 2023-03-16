@@ -3,7 +3,7 @@ function scrollAnimate(){
 
     function animate(){
         elements.forEach((element) =>{
-            if (window.scrollY + window.scrollY * 1.2 >= element.offsetTop){
+            if (window.pageYOffset + (window.innerHeight * 3 / 4) >= element.offsetTop){
                 element.classList.add('animate')
             }else{
                 element.classList.remove('animate')
