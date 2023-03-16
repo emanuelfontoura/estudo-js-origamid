@@ -209,6 +209,24 @@ footer{
     animation: slideDown 0.3s forwards;
 }
 
+[data-animate]{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+[data-animate="left"]{
+    transform: translate3d(-30px, 0px, 0px);
+}
+
+[data-animate="right"]{
+    transform: translate3d(30px, 0px, 0px);
+}
+
+.animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
 @keyframes slideDown{
     from{
         opacity: 0;
