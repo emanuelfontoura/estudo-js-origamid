@@ -209,7 +209,7 @@ footer{
     animation: slideDown 0.3s forwards;
 }
 
-[data-animate]{
+.js [data-animate]{
     opacity: 0;
     transition: 0.5s;
 }
@@ -222,7 +222,7 @@ footer{
     transform: translate3d(30px, 0px, 0px);
 }
 
-.animate{
+.js .animate{
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
 }
