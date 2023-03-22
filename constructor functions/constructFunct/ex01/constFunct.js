@@ -13,11 +13,14 @@
 
 // JEITO CERTO
 
-function Carro(){
-    this.marca = 'Marca'
-    this.preco = 0
+function Carro(marcaAtribuido, precoAtribuido, taxaAtribuido){
+    const precoFinal = precoAtribuido * taxaAtribuido
+
+    this.taxa = taxaAtribuido
+    this.marca = marcaAtribuido
+    this.preco = precoFinal
 }
 
-const honda = new Carro()
-honda.marca = 'Honda'
-honda.preco = 35000
+const honda = new Carro('Honda', 35000, 1.2)
+
+const fiat = new Carro('Fiat', 40000,  1.5)
