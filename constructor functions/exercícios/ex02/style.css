@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+.ativo{
+    background-color: gray;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
