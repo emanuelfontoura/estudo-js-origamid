@@ -35,7 +35,8 @@ const newListaObject = Array.from(lista)
 
 // ACESSAR O NOME DAS PROPRIEDADES E MÉTODOS DOS ELEMENTOS OBJETOS
 console.log(Object.getOwnPropertyNames(Person))
-console.log(Object.getOwnPropertyNames(emanuel.__proto__))
+console.log(Object.getOwnPropertyNames(emanuel.__proto__)) // MÉTODOS E PROPRIEDADES DO PROTOTYPE
+console.log(Object.getOwnPropertyNames(emanuel)) // NAME E AGE
 
 // RETORNAR O NOME DO CONSTRUTOR DE UM ELEMENTO
 console.log(emanuel.constructor)
