@@ -17,6 +17,10 @@ console.log(Math.round(5.7))
 console.log(Math.max(1, 10, 15, 52, 34))
 console.log(Math.min(1, 10, 15, 52, 34))
 
+const array = [1, 10, 15, 52, 34]
+
+console.log(Math.max(...array)) // OPERADOR SPREAD
+
 // RANDOM
 console.log(Math.random()) // entre 0 e 1
 
@@ -27,3 +31,5 @@ let random2 = Math.floor(Math.random() * 500) // entre 0 e 500
 console.log(random2)
 
 let random3 = Math.floor(Math.random() * (64 - 20 + 1) + 20) // entre um intervalo numérico (min-max) em que sempre fazemos (max - min + 1) + min
+
+console.log(random3)
