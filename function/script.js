@@ -27,3 +27,12 @@ const carros2 = ['Ford', 'Fiat', 'VW']
 carros2.forEach.call(carros2, item => {
   console.log(item)
 })
+
+// EXEMPLO REAL
+function Dom(seletor){
+  this.element = document.querySelector(seletor)
+}
+
+const ul = new Dom('ul')
+
+console.log(ul)
