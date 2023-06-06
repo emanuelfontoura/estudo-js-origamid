@@ -112,7 +112,7 @@ console.log(moto)
 console.log('GET E SET')
 
 const motoNovo = {}
-Object.defineProperties(moto, {
+Object.defineProperties(motoNovo, {
     velocidade: {
         get(){
             return this._velocidade
@@ -121,7 +121,21 @@ Object.defineProperties(moto, {
         set(valor){
             return this._velocidade = 'Velocidade ' + valor
         }
-    }
+    },
+
+    rodas: {
+        get(){
+            return this._rodas
+        },
+
+        set(valor){
+            return this._rodas = 'Total de rodas: ' + valor 
+        },
+    },
 })
 
 console.log(motoNovo)
+
+// OBJECT.GETOWNPROPETYDESCRIPTORS(obj)
+console.log('GETOWNPROPETYDESCRIPTORS')
+
