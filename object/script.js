@@ -139,3 +139,78 @@ console.log(motoNovo)
 // OBJECT.GETOWNPROPETYDESCRIPTORS(obj)
 console.log('GETOWNPROPETYDESCRIPTORS')
 
+console.log(Object.getOwnPropertyDescriptors(Array))
+console.log(Object.getOwnPropertyDescriptors(Array.prototype))
+
+// OBJECT.GETOWNPROPETYDESCRIPTOR(obj, 'nomePropriedade')
+console.log('GETOWNPROPETYDESCRIPTOR')
+
+console.log(Object.getOwnPropertyDescriptor(Array, 'length'))
+console.log(Object.getOwnPropertyDescriptor(window, 'innerHeight'))
+
+// OBJECT.keys(obj), OBJECT.values(obj) e OBJECT.entries(obj)
+console.log('KEYS')
+
+const pessoas = {
+    nome: 'Emanuel',
+    idade: 19,
+}
+
+console.log(Object.keys(pessoas))
+console.log(Object.values(pessoas))
+console.log(Object.entries(pessoas))
+
+// OBJECT.GETOWNPROPETYNAMES(obj)
+console.log('GETOWNPROPETYNAMES')
+
+console.log(Object.getOwnPropertyNames(motoNovo))
+
+// OBJECT.GETPROTOTYPEOF(obj)
+console.log('GETPROTOTYPEOF')
+
+console.log(Object.getPrototypeOf(motoNovo))
+
+// OBJECT.IS(obj1, obj2)
+console.log('OBJECT.IS')
+
+const frutas1 = ['Banana', 'Pêra']
+const frutas2 = ['Banana', 'Pêra']
+const novaFruta = frutas1
+
+console.log(Object.is(frutas1, frutas2)) // ARRAY TAMBÉM É UM OBJ, NA VERDADE, TUDO EM JS É UM OBJETO
+console.log(Object.is(novaFruta, frutas1))
+
+// OBJECT.FREEZE()
+console.log('OBJECT FREEZE')
+
+const objetoTeste1 = {
+    marca: 'Honda',
+    ano: 2019,
+}
+
+Object.freeze(objetoTeste1)
+objetoTeste1.ano = 2020 // não muda propriedades
+console.log(objetoTeste1)
+
+// OBJECT.SEAL()
+console.log('OBJECT SEAL')
+
+Object.seal(objetoTeste1)
+delete objetoTeste1.marca // não deleta propriedades
+objetoTeste1.rodas = 4 // não adiciona novas propriedades
+
+console.log(objetoTeste1)
+
+// OBJECT.PREVENTEXTENSIONS()
+console.log('OBJECT PREVENTEXTENSIONS')
+
+const objetoTeste2 = {
+    marca: 'BMW',
+    ano: 2020,
+}
+
+Object.preventExtensions(objetoTeste2)
+objetoTeste2.rodas = 4 // não adiciona novas propriedades
+delete objetoTeste2.marca // deleta propriedades
+
+console.log(objetoTeste2)
