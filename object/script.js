@@ -214,3 +214,36 @@ objetoTeste2.rodas = 4 // não adiciona novas propriedades
 delete objetoTeste2.marca // deleta propriedades
 
 console.log(objetoTeste2)
+
+// {}.CONSTRUCTOR
+console.log('CONSTRUCTOR')
+
+console.log(objetoTeste2.constructor)
+
+// {}.hasOwnProperty('prop')
+console.log('hasOwnProperty')
+
+console.log(objetoTeste2.hasOwnProperty('velocidade'))
+console.log(objetoTeste2.hasOwnProperty('ano'))
+
+// {}.propertyIsEnumerable('prop')
+console.log('propertyIsEnumerable')
+
+console.log(Array.prototype.propertyIsEnumerable('map'))
+console.log(window.propertyIsEnumerable('innerHeight'))
+
+// {}.isPrototypeOf(obj)
+console.log('isPrototypeOf')
+
+const frutas = ['Banana', 'Uva']
+
+console.log(Array.prototype.isPrototypeOf(frutas))
+
+// {}.toString().
+console.log('toString')
+
+const nome = 'Emanuel'
+
+console.log(Object.prototype.toString.call(frutas))
+console.log(Object.prototype.toString.call(objetoTeste2))
+console.log(Object.prototype.toString.call(nome))
