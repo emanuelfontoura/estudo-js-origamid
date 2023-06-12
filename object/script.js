@@ -124,13 +124,13 @@ Object.defineProperties(motoNovo, {
     },
 
     rodas: {
+        set(valor){
+            return this._rodas = 'Total de rodas: ' + valor 
+        },
         get(){
             return this._rodas
         },
 
-        set(valor){
-            return this._rodas = 'Total de rodas: ' + valor 
-        },
     },
 })
 
