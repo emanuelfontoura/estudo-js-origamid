@@ -14,3 +14,5 @@ const divs = document.querySelectorAll('[data-anima]')
 divs.forEach(div => {
     div.classList.add(div.dataset.anima)
 })
+
+// EXERCÍCIO 
