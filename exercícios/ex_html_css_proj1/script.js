@@ -15,4 +15,22 @@ divs.forEach(div => {
     div.classList.add(div.dataset.anima)
 })
 
+
 // EXERCÍCIO 
+function activeTab(index){
+    var direction = allTabs[index].dataset.anime
+    allTabs.forEach(item =>{
+        item.classList.remove(direction)
+    })
+    allTabs[index].classList.add(direction)
+}
+
+const allTabs = document.querySelectorAll("[data-anime=show-right]")
+const imagesAnimals = document.querySelectorAll('[alt^=Imagem')
+allTabs[0].classList.add(allTabs[0].dataset.anime)
+
+imagesAnimals.forEach((item, index) => {
+    item.addEventListener('click', ()=>{
+        activeTab(index)
+    })
+})

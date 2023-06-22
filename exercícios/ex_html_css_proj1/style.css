@@ -188,7 +188,7 @@ footer{
     font-family: 'IBM Plex Mono', monospace;
 }
 
-.ativar{
+.show-right{
     display: block !important;
     animation: show 0.5s forwards;
 }
