@@ -1,5 +1,5 @@
 function scrollSmooth(){
-    const linksInternos2 = document.querySelectorAll('.js-menu a[href^="#"]')
+    const linksInternos2 = document.querySelectorAll('[data-tab="menu"] a[href^="#"]')
 
     function scrollToSection (event) {
         event.preventDefault

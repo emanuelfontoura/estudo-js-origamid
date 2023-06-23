@@ -15,19 +15,18 @@ divs.forEach(div => {
     div.classList.add(div.dataset.anima)
 })
 
-
 // EXERCÍCIO 
 function activeTab(index){
-    var direction = allTabs[index].dataset.anime
+    let direction = allTabs[index].dataset.anime
     allTabs.forEach(item =>{
-        item.classList.remove(direction)
+        item.classList.remove('ativo')
     })
-    allTabs[index].classList.add(direction)
+    allTabs[index].classList.add('ativo', direction)
 }
 
-const allTabs = document.querySelectorAll("[data-anime=show-right]")
+const allTabs = document.querySelectorAll("[data-anime^=show]")
 const imagesAnimals = document.querySelectorAll('[alt^=Imagem')
-allTabs[0].classList.add(allTabs[0].dataset.anime)
+allTabs[0].classList.add('ativo')
 
 imagesAnimals.forEach((item, index) => {
     item.addEventListener('click', ()=>{
