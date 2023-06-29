@@ -1,5 +1,5 @@
 export default function activeTab(index){
-    let direction = allTabs[index].dataset.anime
+    const direction = allTabs[index].dataset.anime
     allTabs.forEach(item =>{
         item.classList.remove('ativo')
     })
