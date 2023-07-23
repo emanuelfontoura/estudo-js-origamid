@@ -12,3 +12,12 @@ function handleClick(){
         labelCep.innerText = `Rua: ${respJson.logradouro} \n Bairro: ${respJson.bairro} \n Cidade: ${respJson.localidade} \n Estado: ${respJson.uf}`
     })
 }
+
+const promessa = new Promise((resolve, reject) => {
+    let dados = true
+    if(dados){
+        resolve('ARGUMENTO X')
+    }else{
+        reject(Error('Ocorreu um erro.'))
+    }
+})
