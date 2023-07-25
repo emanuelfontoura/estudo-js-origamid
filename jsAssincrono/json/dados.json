@@ -1,0 +1,11 @@
+{
+    "id": 1,
+    "nome": "Emanuel",
+    "email": "emanuel@gmail.com",
+    "endereco": {
+        "cidade": "Cachoeiro",
+        "pais": "Brasil"
+    },
+    "pertences": ["lapis", "caderno", "borracha"],
+    "casado": null
+}
