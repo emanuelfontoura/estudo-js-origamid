@@ -3,10 +3,12 @@ function areaQuadrado(lado){
   return lado * lado
 }
 
+areaQuadrado(2)
+
 const perimetroQuadrado = new Function('lado', 'return lado * 4')
 
 // PROPRIEDADES
-console.log(areaQuadrado.length)
+console.log(areaQuadrado.length) // QTD DE PARÂMETRO
 console.log(areaQuadrado.name)
 
 // CALL(this, arg1, arg2, ...)
