@@ -40,7 +40,7 @@ function $$(selectedElements){
     }
 }
 
-function handleClick(e){
+function handleClick(){
     console.log('OI')
 }
 
