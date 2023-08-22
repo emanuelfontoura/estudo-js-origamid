@@ -3,7 +3,7 @@ const a = [1, 2, 3]
 console.log(a.__proto__) // AQUI VC ENCONTRA O SYMBOL.ITERATOR, QUE DEFINE QUE ISSO É UM ELEMENTO ITERÁVEL
 
 // FOR...OF -> só pode ser usado em elementos iteráveis e mostra o item em si
-for(var item in a){
+for(var item of a){
     console.log(item)
 }
 
